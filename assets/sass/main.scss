@@ -1,0 +1,749 @@
+
+@import "reset";
+
+
+$lightBrown: #d6af86;
+$brown: #ad764a;
+$mediumBrown: #d0a57b;
+$black: #313733;
+$blue: #385d6a;
+
+@media only screen and (max-width: 767px){
+
+}
+@media only screen and (max-width: 1023px){
+
+}
+
+#top{
+  background-image: url('/public/img/egypt-landing.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  padding: 50px 0;
+  z-index: 200;
+  header{
+    padding: 0 50px;
+    h3{
+      color: #fefefe;
+      display: inline-block;
+      font-size: 28px;
+      font-weight: 800;
+      font-family: Montserrat;
+      z-index: 1;
+    }
+
+    .go-to{
+      margin-right: -10px;
+      z-index: 1;
+      position: relative;
+      }
+      
+    .egypt{
+        display: inline-block;
+        color: $brown ;
+        z-index: 0;
+        position: relative;
+      }
+    
+    .fas{
+      float: right;
+      padding: 5px 20px 0 20px;
+      color: $brown;
+      font-size: 25px;
+      }
+      
+    nav{
+      display: inline-block;
+      float: right;
+      position: relative;
+      padding-right: 50px;
+      ul{
+        li{
+          display: inline-block;
+          a{
+            position: relative;
+            top: 3px;
+            color: #fefefe;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'EB Garamond';
+            padding: 0px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .title-box{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 220px 50px 0 50px;
+    text-align: center;
+    .world{
+      color: $brown;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      font-size: 14px;
+    }
+    .line{
+      color: $brown;
+      border-bottom: solid 2px $brown;
+      padding: 0px 20px
+      }
+    h1{
+      color: #fefefe;
+      font-family: 'EB Garamond';
+      font-size: 52px;
+      font-weight: 700;
+      padding: 20px 0;
+      line-height: 60px;
+      }
+    .fas{
+      color: #fefefe;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      }
+    p{
+      color: #fefefe;
+      font-family: 'Montserrat';
+      font-weight: 300;
+      font-size: 10px;
+      }
+  }
+
+  .civilizations{
+    margin-top: 900px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 0 50px;
+    .ancient{
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      color: $black;
+      padding-bottom: 5px;
+    }
+    .egyptian{
+      color: #fefefe;
+      font-family: 'EB Garamond';
+      font-size: 42px;
+      font-weight: 700;
+      padding:0 0 20px 0;
+      line-height: 60px;
+      span{
+        color: $black;
+      }
+    }
+    .text-columns{
+      display: flex;
+      grid-column: 1fr 1fr;
+      text-align: left;
+      width: 60%;
+      margin: 0 auto;
+      justify-content: space-between;
+      p{
+        color: #fefefe;
+        font-family: 'EB Garamond';
+        font-size: 24px;
+        line-height: 40px;
+        padding: 40px 0px 100px 0px;
+        margin-right: 0px;
+        max-width: 45%;
+      }
+    }
+  }
+
+  .video{
+    position: absolute;
+    width: 100%;
+    bottom: -150px;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    
+    iframe{
+      width: 560px;
+    }
+  }
+
+  @media only screen and (max-width: 378px){
+    .civilizations{
+      margin-top: 1600px;
+      padding-top: 160px;
+    }
+  }
+
+  @media only screen and (max-width: 432px){
+    .title-box{
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 220px 0 0 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+  @media only screen and (max-width: 560px){
+    iframe{
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 674px){
+    .civilizations .text-columns {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      p{
+        max-width: 100%;
+      }
+      .first{
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    header{
+      display: block;
+      text-align: center;
+      h3{
+        font-size: 46px;
+      }
+      nav{
+        display: none;
+      }  
+    }
+
+    .title-box{
+      padding-top: 150px;
+      h1{
+        font-size: 40px !important;
+      }
+    }
+    .civilizations{
+      margin-top: 1400px;
+      .text-columns {
+        width: 100% !important;
+      }
+    }
+    .video{
+      margin: 0px 0;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px){
+    header{
+      display: block;
+      text-align: center;
+      h3{
+        font-size: 46px;
+      }
+      nav{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px){
+    .civilizations{
+      margin-top: 1200px;
+    }
+    .text-columns{
+      width: 90% !important;
+    }
+  }
+}
+
+#didnt-know{
+  z-index: 100;
+  background-color: $mediumBrown;
+  padding: 50px 0;
+  position: relative;
+  .didnt-know-head{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    max-width: 693px;
+    margin: 0 auto;
+    .ten-things{
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      color: $black;
+    }
+    .egyptian{
+      color: #fefefe;
+      font-family: 'EB Garamond';
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 50px;
+      padding-top: 15px;
+      span{
+        color: $black;
+      }
+    }
+  }
+  .tuta{
+    width: 80%;
+    font-family: 'EB Garamond';
+    padding-top: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    .tuta-left{
+      width: 50%;
+      display: inline-block;
+      float: left;
+      padding-left: 0px;
+      h3{
+        color: #fefefe;
+        font-size: 42px;
+        font-weight: 700;
+        max-width: 447px;
+      }
+      p{
+        color: #fefefe;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 35px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 447px;
+      }
+      a{
+        color: $black;
+        font-weight: 600;
+        font-family: 'Montserrat';
+        max-width: 447px;
+      }
+    }
+    .tuta-right{
+      width: 50%;
+      display: inline-block;
+      float: right;
+      text-align: right;
+      position: relative;
+      top: -100px;
+      right: 0;
+      img{
+        width: 600px;
+        top: -50px;
+      }
+    }  
+  }
+  .cats{
+    width: 80%;
+    font-family: 'EB Garamond';
+    margin-top: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    .cats-left{
+      width: 50%;
+      display: inline-block;
+      float: left;
+      position: relative;
+      img{
+        margin: 0 auto;
+        width: 100%;
+        }
+      } 
+
+    .cats-right{
+      width: 50%;
+      float: right;
+      padding-left: 0px;
+      .right{
+        position: relative;
+        float: right;
+        h3{
+          color: #fefefe;
+          font-size: 42px;
+          font-weight: 700;
+          max-width: 447px;
+        }
+        p{
+          color: #fefefe;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 35px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          max-width: 447px;
+        }
+        a{
+          color: $black;
+          font-weight: 600;
+          font-family: 'Montserrat';
+          max-width: 447px;
+        }
+      }
+    }
+  }   
+    
+    .cats-left{
+      width: 50%;
+      float: left;
+      img{
+        width: 100%;
+      }
+    }  
+
+  .show{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    padding-top: 150px;
+    :hover{
+      background: $black;
+      color: #fefefe;
+      transition: all .2s ease-in-out;
+    }
+    a{
+      text-decoration: none;
+      border: solid 1.5px $black;
+      padding: 20px 35px;
+      color: $black; 
+    }
+  }
+  .top-experiences{
+    margin-top: 150px;
+    text-align: center;
+    padding-bottom: 300px;
+    .go{
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      color: $black;
+    }
+    h4{
+      color: #fefefe;
+      font-family: 'EB Garamond';
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 20px;
+      span{
+        color: $black;
+      }
+    }
+    p{
+      font-family: 'EB Garamond';
+      color: #fefefe;
+      font-size: 16px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 614px;
+      margin: 0 auto;
+    }
+  }
+  .thirds{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    float: left;
+    bottom: -220px;
+    left: 0px;
+  }
+
+  @media only screen and (max-width: 1000px){
+    .didnt-know-head {
+      padding-top: 200px;
+      padding-bottom: 0px;
+    }
+    .tuta{
+      padding: 0 10px;
+      .tuta-left{
+        width: 100%;
+        text-align: center;
+        h3{
+          margin-top: 20px;
+          font-size: 38px;
+          margin: 0 auto;
+          line-height: 50px;
+        }
+        p{
+          margin: 0 auto;
+        }
+      }
+      .tuta-right{
+        width: 100%;
+        float: none;
+        top: -30px;
+        img{
+          width: 100%;
+          margin-top: 150px;
+        }
+      }
+    }
+    
+    .cats{
+      padding: 0 10px;
+      .cats-left{
+        width: 100%;
+        margin-top: 40px;
+        img{
+          margin-top: 100px;
+          width: 100%;
+        }
+      }
+      .cats-right{
+        width: 100%;
+        text-align: center;
+        
+        .right{
+          max-width: 447px;
+          text-align: center;
+          margin: 0 auto;
+          float: none;
+          h3{
+            margin-top: 40px;
+            font-size: 38px;
+          }
+        }
+      }
+    }
+    
+    .thirds{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 420px){
+    .top-experiences {
+      padding: 0 10px 100px 10px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 500px){
+    .top-experiences {
+      margin-top: 150px;
+      text-align: center;
+      padding: 0 10px 180px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .thirds{
+      bottom: -110px;
+    }
+    .top-experiences {
+      padding: 0 10px 180px 10px;
+      margin-bottom: 0px !important;
+    }
+  }
+
+  @media only screen and (max-width: 690px) {
+    .thirds{
+      bottom: -170px;
+    }
+    .top-experiences {
+      padding: 0 10px 180px 10px;
+      margin-bottom: 50px;
+    }
+  }
+  @media only screen and (max-width: 1270px){
+    .cats-right{
+      width: 50%;
+    }
+  }
+
+  // @media only screen and (max-width: 1350px){
+  //   .cats-right{
+  //     width: 50%;
+  //   }
+  // }
+
+  @media only screen and (max-width: 1610px){
+    .tuta{
+      width: 90%;
+    }
+    .cats{
+      width: 90%;
+    }
+  }
+}
+
+#thank-you{
+  background-color: $lightBrown;
+  .thank-you{
+    text-align: center;
+    padding: 300px 50px 50px;
+    max-width: 400px;
+    margin: 0 auto;
+    .go{
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-family: 'Montserrat';
+      font-size: 14px;
+      color: $black;
+    }
+    h4{
+      color: #fefefe;
+      font-family: 'EB Garamond';
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 20px;
+      span{
+        color: $black;
+      }
+    }
+    p{
+      font-family: 'EB Garamond';
+      color: #fefefe;
+      font-size: 16px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .thank-you {
+      text-align: center;
+      padding: 300px 20px 50px 20px !important;
+    }
+  }
+
+}
+
+footer{
+  background-image: url("https://i.postimg.cc/QtFWkBth/camel-copy.jpg");
+  background-size: cover;
+  background-position: bottom;
+  .sponsors{
+    text-align: center;
+    img{
+      height: 45px;
+      padding-right: 60px;
+    }
+    .lone{
+      padding: 0;
+      height: 60px;
+      position: relative;
+      top: 8px;
+    }
+  }
+  .book{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    padding-top: 150px;
+    :hover{
+      background: $black;
+      color: #fefefe;
+      transition: all .2s ease-in-out;
+    }
+    a{
+      text-decoration: none;
+      border: solid 1.5px $black;
+      padding: 20px 35px;
+      color: $black; 
+    }
+  }
+  .line{
+    padding: 610px 0 0;
+    p{
+    text-align: center;
+    border-bottom: solid 1.2px $black;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0px ;
+    }
+  }
+  .foot{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+    font-family: 'EB Garamond';
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 22px;
+    .go{
+      margin-left: 100px;
+      h3{
+        color: #fefefe;
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 800;
+        font-family: 'Montserrat'
+      }
+  
+      .go-to{
+        margin-right: -10px;
+        z-index: 1;
+        position: relative;
+      }
+        
+      .egypt{
+        display: inline-block;
+        color: $brown ;
+        z-index: 0;
+        position: relative;
+      }
+    }
+    .privacy{
+      display: flex;
+      flex-direction: row;
+      p{
+        padding-right: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px){
+    .foot{
+    display: block;
+    text-align: center;
+    .go{
+      margin: 30px 0;
+    }
+    .privacy{
+      text-align: center !important;
+      margin: 0 auto;
+      display: inline-block;
+      }
+      p{
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 870px){
+    .sponsors{
+      img{
+        padding: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 688px){
+    .sponsors{
+      text-align: center;
+      img{
+        padding: 30px 0;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+  
+
